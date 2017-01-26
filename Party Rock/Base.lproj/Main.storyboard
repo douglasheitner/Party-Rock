@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Party_Rock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="mPi-hM-gGQ">
+                                <rect key="frame" x="0.0" y="28" width="414" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="mmU-Ce-0LW"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ac0-ab-sIh">
+                                <rect key="frame" x="0.0" y="210" width="414" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ac0-ab-sIh" firstAttribute="top" secondItem="mPi-hM-gGQ" secondAttribute="bottom" constant="16" id="3eI-TG-JqV"/>
+                            <constraint firstItem="Ac0-ab-sIh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8u4-kr-omV"/>
+                            <constraint firstAttribute="trailing" secondItem="mPi-hM-gGQ" secondAttribute="trailing" id="Rvd-uw-wUR"/>
+                            <constraint firstItem="Ac0-ab-sIh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="210" id="Sp8-lz-vgY"/>
+                            <constraint firstItem="mPi-hM-gGQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Wrz-Es-UoZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ac0-ab-sIh" secondAttribute="trailing" id="cSd-m0-2Ef"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ac0-ab-sIh" secondAttribute="bottom" constant="486" id="elC-KD-MDt"/>
+                            <constraint firstItem="Ac0-ab-sIh" firstAttribute="leading" secondItem="mPi-hM-gGQ" secondAttribute="leading" id="lro-Zv-OvU"/>
+                            <constraint firstItem="mPi-hM-gGQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="m4K-Ne-C8V"/>
+                            <constraint firstItem="Ac0-ab-sIh" firstAttribute="trailing" secondItem="mPi-hM-gGQ" secondAttribute="trailing" id="shK-9F-S6S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="123.09782608695653"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner" width="1500" height="606"/>
+    </resources>
+</document>
