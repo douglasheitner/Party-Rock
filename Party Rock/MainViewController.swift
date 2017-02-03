@@ -14,8 +14,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var partyRocks = [PartyRock]()
     
+    let urlTest = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/aIslBlTkdWk\" frameborder=\"0\" allowfullscreen></iframe>"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let p1 = PartyRock(imageURL: <#T##String#>, videoURL: <#T##String#>, videoTitle: <#T##String#>)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -27,14 +31,17 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "PartyCell", for: <#T##IndexPath#>) as? PartyCell{
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PartCell", for: indexPath) as? PartyCell{
             
-            let
+            let partyRock = PartyRock[indexPath.row]
             
-            cell.updateUI
+            cell.updateUI (partyRock: partyRock)
+            
+            return cell
+            
+        } else {
+            return UITableViewCell()
+        
         }
     }
-
-
 }
-
