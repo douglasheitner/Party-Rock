@@ -19,8 +19,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Mock data - this will eventually come from a database via model.
         let p1 = PartyRock(imageURL: "https://upload.wikimedia.org/wikipedia/en/a/a7/JohnMayerBattleStudies.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/t-a2IOKrQHY\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Crossroads")
-        let p2 = PartyRock(imageURL: "https://upload.wikimedia.org/wikipedia/en/a/a7/JohnMayerBattleStudies.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5GTbM5-ku-M\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Edge of Desire")
+        let p2 = PartyRock(imageURL: "https://upload.wikimedia.org/wikipedia/en/a/a7/JohnMayerBattleStudies.jpg", videoURL: "<iframe src=\"https://www.youtube.com/embed/KZ75pdGdK-g\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Edge of Desire")
         let p3 = PartyRock(imageURL: "https://upload.wikimedia.org/wikipedia/en/8/82/Continuum_(album).png", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/MZjZI6eGtcM\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Belief")
         let p4 = PartyRock(imageURL: "https://upload.wikimedia.org/wikipedia/en/8/82/Continuum_(album).png", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UCpwMfqXxgw\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Slow Dancing in a Burning Room")
         let p5 = PartyRock(imageURL: "https://upload.wikimedia.org/wikipedia/en/a/a7/JohnMayerBattleStudies.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4GRBrHTerf0\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Friends, Lovers or Nothing")
